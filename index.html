@@ -1,11 +1,8 @@
-<div style="width: 100%; height: 500px">
-  <n8nchatui-inpage></n8nchatui-inpage>
-</div>
 <script type="module" defer>
   import Chatbot from "https://cdn.n8nchatui.com/v1/embed.js";
   Chatbot.initFull({
     "n8nChatUrl": "https://maryamzfrzfr.app.n8n.cloud/webhook/a5f08b4c-d9e7-45db-85fd-54c9f41fef43/chat",
-    "metadata": {}, // Any custom data to send with each message to your n8n workflow
+    "metadata": {}, // Include any custom data to send with each message to your n8n workflow
     "theme": {
       "button": {
         "iconColor": "#f2f3f4",
@@ -21,10 +18,10 @@
         "avatarSize": 32,
         "welcomeMessage": "Hello 👋 I'm Terrascope! I'll tell you about the environment.",
         "errorMessage": "Please connect me to n8n first",
-        "height": 500,
-        "width": 400,
-        "fontSize": 16,
         "backgroundColor": "#fbe4d8",
+        "height": "100vh", // Full viewport height
+        "width": "100%",   // Full width of the page
+        "fontSize": 16,
         "starterPrompts": [
           "I shopped from a Fast Fashion Brand",
           "I drove 17 km to this school."
@@ -61,9 +58,3 @@
     }
   });
 </script>
-html, body {
-  margin: 0;
-  padding: 0;
-  height: 100%;
-}
-
